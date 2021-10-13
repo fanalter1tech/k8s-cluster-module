@@ -29,10 +29,8 @@ variable "admin_user"{
   default     = ""
 }
 
-variable "ssh_key" {
-  type        = string
-  description = "ssh_key for admin_user"
-  default     = ""
+variable "ssh_public_key" {
+  default = "~/.ssh/id_rsa.pub"
 }
 
 variable "tags" {
